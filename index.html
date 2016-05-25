@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Eugene Han</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/animate.css">
+        <link rel="stylesheet" type="text/css" href="./css/simpletextrotator.css">
+        <link rel="stylesheet" type="text/css" href="./css/custom.css">
+    </head>
+
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="200">
+        <nav class="navbar navbar-custom navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">Eugene Han</a>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="hidden"></li>
+                        <li><a href="#about" class="scrollto">About Me</a></li>
+                        <li><a href="#portfolio" class="scrollto">Portfolio</a></li>
+                        <li><a href="#contact" class="scrollto">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="header">
+            <div class="container">
+                <div class="animated" style="animation-name: bounce">
+                    <h1>Hello, I am Eugene Han</h1>
+                    <h3><span class="rotate">Student,Mathematician,Software Developer,Thinker,Web Designer</span></h3>
+                    <a href="#about" class="btn btn-circle">
+                        <i class="fa fa-angle-double-down"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <section id="about">
+        
+            <div class="container">
+            
+                <div class="row">
+                    <div class="col-sm-4 col-sm-offset-1">
+                        <img class="img-responsive img-circle img-center" src="./test.jpg" alt="">
+                    </div>
+                    <div class="col-sm-6 col-sm-offset-1 scrollimation fade-left">
+                        <h1>About Me</h1>
+                        <p>I am a sophomore at <a href="http://www.cmu.edu/" target="_blank">Carnegie Mellon University</a> in the Mellon College of Science pursuing a degree in mathematics and a second degree in computer science. I graduated from <a href="http://bcts.bergen.org/index.php/bergen-county-academies" target="_blank">Bergen County Academies</a> in 2015 from the Academy for Engineering and Design Technology.</p>
+                        <a href="./resume.pdf" class="btn-rect">Resume</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            
+        </section>
+
+        <section id="contact" class="container-fluid">
+            <h1>Contact Me</h1>
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="https://github.com/EugeneHan" target="_blank"><i class="fa fa-github fa-5x"></i></a>
+                    <br>
+                    <a href="https://github.com/EugeneHan" target="_blank"><p>GitHub</p></a>
+                </div>
+                <div class="col-md-4">
+                    <a href="" target="_blank"><i class="fa fa-linkedin fa-5x"></i></a>
+                    <br>
+                    <a href="https://www.linkedin.com/in/eugene-han-8537026a
+" target="_blank"><p>LinkedIn</p></a>
+                </div>
+                <div class="col-md-4">
+                    <a href="mailto:eugeneh@andrew.cmu.edu" target="_blank"><i class="fa fa-envelope-o fa-5x"></i></a>
+                    <br>
+                    <a href="mailto:eugeneh@andrew.cmu.edu" target="_blank"><p>eugeneh@andrew.cmu.edu</p></a>
+                </div>      
+        </section>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/jquery.simple-text-rotator.min.js"></script>
+        <script src="./js/custom.js"></script>
+
+        <script>
+        $(document).ready(function(){
+            $(".rotate").textrotator({
+                animation: "fade",
+                separator: ",",
+                speed: 1500
+                });
+            });
+        </script>
+
+    </body>
+</html>
