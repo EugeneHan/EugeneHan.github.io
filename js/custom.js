@@ -6,11 +6,19 @@ function collapseNavbar() {
         for (var i = 0; i < links.length; i++) {
             links[i].style.color = "#FFF"
         }
+        var toggle = document.querySelectorAll(".navbar-custom .navbar-toggle .icon-bar");
+        for (var j = 0; j < toggle.length; j++) {
+            toggle[j].style.backgroundColor = "#FFF"
+        }
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
         var links = document.querySelectorAll(".navbar-custom a");
         for (var i = 0; i < links.length; i++) {
             links[i].style.color = "#000"
+        }
+        var toggle = document.querySelectorAll(".navbar-custom .navbar-toggle .icon-bar");
+        for (var j = 0; j < toggle.length; j++) {
+            toggle[j].style.backgroundColor = "#000"
         }
     }
 }

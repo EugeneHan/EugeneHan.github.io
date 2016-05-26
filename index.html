@@ -27,13 +27,12 @@
                     <ul class="nav navbar-nav">
                         <li class="hidden"></li>
                         <li><a href="#about" class="scrollto">About Me</a></li>
-                        <li><a href="#portfolio" class="scrollto">Portfolio</a></li>
+                        <li><a href="#projects" class="scrollto">Projects</a></li>
                         <li><a href="#contact" class="scrollto">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-
 
         <div class="header">
             <div class="container">
@@ -48,12 +47,10 @@
         </div>
 
         <section id="about">
-        
             <div class="container">
-            
                 <div class="row">
                     <div class="col-sm-4 col-sm-offset-1">
-                        <img class="img-responsive img-circle img-center" src="./test.jpg" alt="">
+                        <img class="img-responsive img-circle img-center" src="./headshot.jpg" alt="">
                     </div>
                     <div class="col-sm-6 col-sm-offset-1 scrollimation fade-left">
                         <h1>About Me</h1>
@@ -64,9 +61,69 @@
             </div>
         </section>
 
-        <section id="projects" class="section">
-            
+        <section id="projects">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h1>Projects</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 project-item">
+                        <a href="#go-ai" class="project-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                    <p>Go Engine + AI</p>
+                                </div>
+                            </div>
+                        <img src="./go.png" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 project-item">
+                        <a href="#geometrify" class="project-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                    <p>Placeholder</p>
+                                </div>
+                            </div>
+                        <img src="./placeholder.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <div class="project-modal modal fade" id="go-ai" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <!-- lr: left to right diagonal -->
+                    <div class="lr">
+                        <!-- rl: right to left diagonal -->
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h1>15-112 Final Term Project</h1>
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" width="854" height="480" src="https://www.youtube.com/embed/xJe5s-tWGLo" frameborder="0" align="middle" allowfullscreen></iframe>
+                                </div>
+                                <p style="margin-top: 25px; text-align: left;">This application was built as a final term project for 15-112: Fundamentals of Programming at Carnegie Mellon University. The goal of the project was to build the game of Go from scratch, have a multiplayer feature, and have a few AIs for the singleplayer feature. This project was built using only python.</p>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    <i class="fa fa-times"></i> Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <section id="contact" class="container-fluid">
             <h1>Contact Me</h1>
@@ -88,6 +145,18 @@
                     <br>
                     <a href="mailto:eugeneh@andrew.cmu.edu" target="_blank"><p>eugeneh@andrew.cmu.edu</p></a>
                 </div>      
+        </section>
+
+        <section id="footer">
+            <footer class="text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            © 2016 Eugene Han. All rights reserved.
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </section>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
