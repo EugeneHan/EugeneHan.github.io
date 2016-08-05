@@ -26,15 +26,11 @@ function collapseNavbar() {
 $(window).scroll(collapseNavbar);
 $(document).ready(collapseNavbar);
 
-
-// $((document).on($(".navbar-header").css("background-color") == "#000") function(e) {
-//     alert('detected'); 
-//     var links = document.querySelectorAll(".navbar-custom a");
-//     for (var i = 0; i < links.length; i++) {
-//         links[i].style.color = "#FFF"
-//     }
-// });
-
+jQuery(document).keydown(function(e) {
+    if (e.keyCode == 27) {
+        jQuery("#go-ai").modal("hide");
+    }
+});
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
