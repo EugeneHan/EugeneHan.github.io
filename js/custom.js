@@ -1,6 +1,16 @@
 // jQuery to collapse the navbar on scroll
 function collapseNavbar() {
-    if ($(".navbar").offset().top > 50) {
+    var width = window.innerWidth;
+    if (width <= 768) {
+        var links = document.querySelectorAll(".navbar-custom a");
+        for (var i = 0; i < links.length; i++) {
+            links[i].style.color = "white";
+        }
+        var toggle = document.querySelectorAll(".navbar-custom .navbar-toggle .icon-bar");
+        for (var j = 0; j < toggle.length; j++) {
+            toggle[j].style.backgroundColor = "#FFF"
+        }
+    } else if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
         var links = document.querySelectorAll(".navbar-custom a");
         for (var i = 0; i < links.length; i++) {
@@ -23,8 +33,25 @@ function collapseNavbar() {
     }
 }
 
+function whitetext() {
+    var width = window.innerWidth;
+    if (width <= 768) {
+        var links = document.querySelectorAll(".navbar-custom a");
+        for (var i = 0; i < links.length; i++) {
+            links[i].style.color = "white";
+        }
+        var toggle = document.querySelectorAll(".navbar-custom .navbar-toggle .icon-bar");
+        for (var j = 0; j < toggle.length; j++) {
+            toggle[j].style.backgroundColor = "#FFF"
+        }
+    }
+}
+
+window.onload = whitetext;
 $(window).scroll(collapseNavbar);
+$(window).resize(whitetext);
 $(document).ready(collapseNavbar);
+$(document).ready(whitetext);
 
 jQuery(document).keydown(function(e) {
     if (e.keyCode == 27) {

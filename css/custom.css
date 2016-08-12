@@ -14,22 +14,22 @@ body {
     color: #000;
 }
 
+.navbar-header {
+}
+
 .navbar-custom {
     text-transform: uppercase;
     font-family: "Chalet-Paris";
-    background-color: #ccc;
-}
-
-.navbar-custom .navbar-toggle .icon-bar {
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .navbar-custom .navbar-brand {
-    font-weight: 700;
+    /*font-family: "Chalet-NY";*/
 }
 
 .navbar-custom a:hover {
     color: #EF4836!important;
+    font-size: 24px;
 }
 
 .navbar-custom .nav li a {
@@ -39,8 +39,8 @@ body {
 }
 
 .navbar-custom .nav li.active a {
-    /*background-color: #C4C4C4;*/
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: white;
+    color: #EF4836!important;
 }
 
 @media(min-width:768px) {
@@ -56,7 +56,7 @@ body {
 
     .navbar-custom.top-nav-collapse {
         padding: 0;
-        background: #ccc;
+        background: black;
     }
 }
 
@@ -64,16 +64,19 @@ body {
     text-align: center;
     height: 100vh;
     background-image: url(../header.jpg);
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     overflow: hidden;
     position: relative;
+    max-width: none;
+    /*width: auto\9;*/
 }
 
 .header h1 {
     font-family: "Raleway";
-    font-size: 75px;
+    font-size: 30px;
     margin-top: 15%;
     color: #000;
 }
@@ -179,6 +182,7 @@ body {
 
 #projects {
     background-color: #EFEFEF;
+    padding: 40px;
 }
 
 #projects .project-item {
