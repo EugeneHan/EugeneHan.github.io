@@ -1,4 +1,4 @@
-.nav-pills{
+.nav-pills {
     display: inline-block;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -9,12 +9,9 @@
   border-radius: 5px;
 }
 
-/*.content {
-  border: 1px solid #efefef;
-  border-radius: 5px;
-  display: block;
-  z-index: 999;
-}*/
+.center-img {
+  margin:  auto;
+}
 
 .project-item .project-link {
     display: block;
