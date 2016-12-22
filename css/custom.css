@@ -45,3 +45,7 @@
 .project-item .project-link .caption:hover {
     opacity: 1;
 }
+
+@media (max-width: 768px) {
+  #navbar li { width:100%; }
+}
