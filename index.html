@@ -11,10 +11,10 @@
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/custom.css" rel="stylesheet">
-        <link rel='stylesheet' type='text/css' href='./css/font-awesome.min.css'>
+        <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!-- WARNING: Respond.js doesn"t work if you view the page via file:// -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -22,155 +22,192 @@
     </head>
     
     <body>
-        <div class="container">
+        <div class="navbar navbar-default visible-xs" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse-items">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="nav-collapse-items">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+                    <li><a data-toggle="pill" href="#projects">Projects</a></li>
+                    <li><a data-toggle="pill" href="#experience">Experience</a></li>
+                    <li><a data-toggle="pill" href="#coursework">Coursework</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container-fluid">
             <div class="text-center">
-                <nav role='navigation'>
-                    <ul class='nav nav-pills'>
-                        <div class='col-xs-3'>
-                            <li class='active'><a data-toggle="pill" href="#home">Home</a></li>
-                        </div>
-                        <div class='col-xs-3'>
+                <nav role="navigation">
+                    <ul class="nav nav-pills hidden-xs">
+                        <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
                         <li><a data-toggle="pill" href="#projects">Projects</a></li>
-                        </div>
-                        <div class='col-xs-3'>
                         <li><a data-toggle="pill" href="#experience">Experience</a></li>
-                        </div>
-                        <div class='col-xs-3'>
                         <li><a data-toggle="pill" href="#coursework">Coursework</a></li>
-                        </div>
                     </ul>
                 </nav>
             </div>
         </div>
 
+
         <div class="tab-content">
+            <div id="home" class="tab-pane fade in active" style="text-align: center;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+                            <div class="panel panel-primary" style="text-align: left;">
+                                <div class="panel-heading">
+                                    About Me
+                                </div>
 
-            <div id="home" class="tab-pane fade in active" style='margin: 2% 25% 2% 25%; text-align: left;'>
-                <div class='content'>
-                    <p>Hello! Welcome to my own personal site. I am a Carnegie Mellon University undergraduate, class of 2019, majoring in Mathematics, with an anticipated major in Computer Science and minor in Computational Finance. </p>                    
-                </div>
+                                <div class="panel-body">
+                                    Hello! Welcome to my own personal site. I am a Carnegie Mellon University undergraduate, class of 2019, majoring in Mathematics, with an anticipated major in Computer Science and minor in Computational Finance.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                <br>
-                <div class='content' style='text-align: center;'>
-                    <p>Quick Links</p>
-                    <div class='row'>
-                        <div class='col-md-4'>
-                            <a href='./resume.pdf'><i class='fa fa-file-text-o fa-5x'></i></a>
-                            <br>
-                            <a href='./resume.pdf'><p>Resume</p></a>
-                        </div>
-                        <div class='col-md-4'>
-                            <a href='https://github.com/EugeneHan' target='_blank'><i class='fa fa-github fa-5x'></i></a>
-                            <br>
-                            <a href='https://github.com/EugeneHan' target='_blank'><p>GitHub</p></a>
-                        </div>
-                        <div class='col-md-4'>
-                            <a href='https://www.linkedin.com/in/eugene-han-8537026a' target='_blank'><i class='fa fa-linkedin fa-5x'></i></a>
-                            <br>
-                            <a href='https://www.linkedin.com/in/eugene-han-8537026a' target='_blank'><p>LinkedIn</p></a>
+
+                    <div class="row">
+                        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading" style="text-align: center;">
+                                    Quick Links
+                                </div>
+
+                                <div class="panel body">
+                                    <div class="row">
+                                        <div class="home-icon col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                            <a href="./resume.pdf"><i class="fa fa-file-text-o fa-5x"></i></a>
+                                            <br>
+                                            <a href="./resume.pdf"><p>Resume</p></a>
+                                        </div>
+                                        <div class="home-icon col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                            <a href="https://github.com/EugeneHan" target="_blank"><i class="fa fa-github fa-5x"></i></a>
+                                            <br>
+                                            <a href="https://github.com/EugeneHan" target="_blank"><p>GitHub</p></a>
+                                        </div>
+                                        <div class="home-icon col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                            <a href="https://www.linkedin.com/in/eugene-han-8537026a" target="_blank"><i class="fa fa-linkedin fa-5x"></i></a>
+                                            <br>
+                                            <a href="https://www.linkedin.com/in/eugene-han-8537026a" target="_blank"><p>LinkedIn</p></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             
             <div id="experience" class="tab-pane fade">
-                <br>
-                <div style='text-align: center;'>Here's a link to my <a href='./resume.pdf'>resume.</a></div>
-                <div class='content' style='margin: 2% 30% 2% 30%; text-align: center;'>
-                    <div class='row'>
-                        <div class='col-md-3'>
-                            <img src='./scs.gif' style='width: 75px; height: 75px'>
+                <div style="text-align: center;">Here"s a link to my <a href="./resume.pdf">resume.</a></div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="./scs.gif" style="width: 75px; height: 75px">
                         </div>
-                        <div class='col-md-9' style='text-align: left;'>
+                        <div class="col-md-9" style="text-align: left;">
                             <strong>15-122 Teaching Assistant (Spring 2017)</strong>
                             <p>Grading, Teaching, &amp Office Hours.</p>
                         </div>
                     </div>
-                    <div class='row'>
-                        <div class='col-md-3'>
-                            <img src='./opticlose.jpg' style='width: 75px; height: 75px'>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="./opticlose.jpg" style="width: 75px; height: 75px">
                         </div>
-                        <div class='col-md-9' style='text-align: left;'>
+                        <div class="col-md-9" style="text-align: left;">
                             <strong>Opticlose</strong>
-                            <p>I created R scripts for statistical analyses on sales data in order to predict which prospective customers will buy from our clients' sales team. I also developed a company specific library of R functions to assist in developing statistical models for our clients and presented analysis results to current and potential investors.</p>
+                            <p>I created R scripts for statistical analyses on sales data in order to predict which prospective customers will buy from our clients" sales team. I also developed a company specific library of R functions to assist in developing statistical models for our clients and presented analysis results to current and potential investors.</p>
                         </div>
                     </div>
-                </div>
             </div>
 
             <div id="projects" class="tab-pane fade">
-                <div class='content' style='margin: 2% 25% 2% 25%; text-align: center; padding-top: 0;'>
+                <div class="content" style="margin: 2% 25% 2% 25%; text-align: center; padding-top: 0;">
                     <h4>Research</h4>
-                    <p style='text-align: left'>I am currently being advised by <a href='https://davidoffner.wordpress.com/' target='_blank'>David Offner</a> for math research on hypercubes. A coloring of the $l$-dimensional faces of a hypercube $Q_n$ is called $d$-polychromatic if every embedded $Q_d$ has every color on at least one face. Denote $p^{l}_d$ as the maximum number of colors such that any $Q_n$ can be colored in this way. My current venture is determining a lower bound for $p^{l}_d$ for $l > 1$ that is better than current known ones.</p>
+                    <p style="text-align: left">I am currently being advised by <a href="https://davidoffner.wordpress.com/" target="_blank">David Offner</a> for math research on hypercubes. A coloring of the $l$-dimensional faces of a hypercube $Q_n$ is called $d$-polychromatic if every embedded $Q_d$ has every color on at least one face. Denote $p^{l}_d$ as the maximum number of colors such that any $Q_n$ can be colored in this way. My current venture is determining a lower bound for $p^{l}_d$ for $l > 1$ that is better than current known ones.</p>
                 </div>
 
-                <div class='content' style='margin: 2% 20% 2% 20%; text-align: center; padding-top: 0;'>
+                <div class="content" style="margin: 2% 20% 2% 20%; text-align: center; padding-top: 0;">
                     <h4>Programming &amp Hackathon Projects</h4>
 
-                    <div class='row'>
-                        <div class='col-sm-6 project-item'>
-                            <a href='https://youtu.be/xJe5s-tWGLo' target='_blank' class='project-link'>
-                                <div class='caption'>
-                                    <div class='caption-content'>
-                                        <i class='fa fa-search-plus fa-3x'></i>
+                    <div class="row">
+                        <div class="col-sm-6 project-item">
+                            <a href="https://youtu.be/xJe5s-tWGLo" target="_blank" class="project-link">
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <i class="fa fa-search-plus fa-3x"></i>
                                         <p>15-112 Term Project<br>Go Engine + AI</p>
                                     </div>
                                 </div>
-                            <img src='./go.png' class='img-responsive'>
+                            <img src="./go.png" class="img-responsive">
                             </a>
                         </div>
-                        <div class='col-sm-6 project-item'>
-                            <a href='https://devpost.com/software/awair' target='_blank' class='project-link'>
-                                <div class='caption'>
-                                    <div class='caption-content'>
-                                        <i class='fa fa-search-plus fa-3x'></i>
+                        <div class="col-sm-6 project-item">
+                            <a href="https://devpost.com/software/awair" target="_blank" class="project-link">
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <i class="fa fa-search-plus fa-3x"></i>
                                         <p>HackCMU 2015<br>Harris Award</p>
                                     </div>
                                 </div>
-                            <img src='./awair.png' class='img-responsive'>
+                            <img src="./awair.png" class="img-responsive">
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div id="coursework" class="tab-pane fade">
-                <div class='container text-center'>
-                    <div class='content' style='margin: 2% 15% 2% 15%; text-align: left; padding-top: 1%;'>
-                        <div class='row'>
-                            <div class="col-md-6">
-                                <h4 style='text-align: center'><strong>Computer Science</strong></h4>
-                                <p><strong>15-112</strong> Fundamentals of Programming and Computer Science</p>
-                                <p><strong>15-122</strong> Principles of Imperative Computation</p>
-                                <p><strong>15-150</strong> Functional Programming</p>
-                                <p><strong>15-251</strong> Great Theoretical Ideas in Computer Science</p>
-                                <p><strong>15-388</strong> Practical Data Science</p>
-                                <br>
-                                <p><strong>**15-213</strong> Introduction to Computer Systems</p>
-                            </div>
-
-                            <div class="col-md-6">
-                                <h4 style='text-align: center'><strong>Mathematics &amp Finance</strong></h4>
-                                <p><strong>21-128</strong> Mathematical Concepts and Proofs</p>
-                                <p><strong>21-242</strong> Matrix Theory</p>
-                                <p><strong>21-269</strong> Vector Analysis</p>
-                                <p><strong>21-325</strong> Probability</p>
-                                <p><strong>21-373</strong> Algebraic Structures</p>
-                                <br>
-                                <p><strong>**21-260</strong> Differential Equations</p>
-                                <p><strong>**21-270</strong> Introduction to Mathematical Finance</p>
-                                <p><strong>**21-301</strong> Combinatorics</p>
-                                <p><strong>**21-355</strong> Real Analysis I</p>
-                                
+            <div id="coursework" class="tab-pane fade" style="text-align: center;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1" style="text-align: left">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">Mathematics &amp Finance</div>
+                                <ul class="list-group list-group">
+                                    <li class="list-group-item"><strong>21-128</strong> Mathematical Concepts and Proofs</li>
+                                    <li class="list-group-item"><strong>21-242</strong> Matrix Theory</li>
+                                    <li class="list-group-item"><strong>21-269</strong> Vector Analysis</li>
+                                    <li class="list-group-item"><strong>21-295</strong> Putnam Seminar</li>
+                                    <li class="list-group-item"><strong>21-325</strong> Probability</li>
+                                    <li class="list-group-item"><strong>21-373</strong> Algebraic Structures</li>
+                                    <li class="list-group-item"><strong>**21-260</strong> Differential Equations</li>
+                                    <li class="list-group-item"><strong>**21-270</strong> Introduction to Mathematical Finance</li>
+                                    <li class="list-group-item"><strong>**21-301</strong> Combinatorics</li>
+                                    <li class="list-group-item"><strong>**21-355</strong> Real Analysis I</li>
+                                </ul>
                             </div>
                         </div>
-
-                        <div style='text-align: right;'>
-                            <h5>** Enrolled in Spring 2017</h5>
-                        </div>   
-                     
+                        <div class="clearfix visible-xs-block"></div>
+                        <div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-0 col-md-5 col-md-offset-0 col-lg-5 col-lg-offset-0" style="text-align: left">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">Computer Science</div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><strong>15-112</strong> Fundamentals of Programming and Computer Science</li>
+                                    <li class="list-group-item"><strong>15-122</strong> Principles of Imperative Computation</li>
+                                    <li class="list-group-item"><strong>15-150</strong> Functional Programming</li>
+                                    <li class="list-group-item"><strong>15-251</strong> Great Theoretical Ideas in Computer Science</li>
+                                    <li class="list-group-item"><strong>15-388</strong> Practical Data Science</li>
+                                    <li class="list-group-item"><strong>**15-213</strong> Introduction to Computer Systems</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <div style="text-align: right;">
+                    <h5>** Enrolled in Spring 2017</h5>
+                </div>   
+                         
+            
+                    <!-- </div> -->
+                <!-- </div> -->
             </div>
         </div>
 
@@ -178,11 +215,12 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/custom.js"></script>
         <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
                 tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
             });
         </script>
-        <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     </body>
 </html>
