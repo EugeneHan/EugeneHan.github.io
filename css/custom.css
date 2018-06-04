@@ -1,9 +1,38 @@
-.nav-pills {
-    display: inline-block;
-    margin-top: 10px;
-    margin-bottom: 10px;
+@font-face {
+    font-family: "Chalet-Paris";
+    src: url(../fonts/Chalet-ParisNineteenSixty.otf);
+}
+@font-face {
+    font-family: "Chalet-NY";
+    src: url(../fonts/Chalet-NewYorkNineteenSixty.otf);
 }
 
-.home-icon {
-  margin-top: 15px;
+h1 {
+    font-family: "Chalet-Paris", serif;
+    text-align:center !important;
+}
+
+h1 a {
+    text-decoration: none !important;
+}
+
+h3 {
+    font-family: "Chalet-NY";
+}
+
+.main-header {
+    padding-top: 10px;
+}
+
+.main-header nav a:hover {
+    color: #EF4836 !important;
+}
+
+.container {
+    width: auto;
+    max-width: 680px;
+}
+
+.active {
+    color: #EF4836 !important;
 }
