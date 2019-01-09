@@ -7,14 +7,18 @@
     src: url(../fonts/Chalet-NewYorkNineteenSixty.otf);
 }
 
-h1 {
-    font-family: "Chalet-Paris", serif;
-    text-align:center !important;
-    font-size: 3em;
+@font-face {
+    font-family: "8bit";
+    src: url(../fonts/8bitoperator.ttf);
 }
 
-h1 a {
-    text-decoration: none !important;
+h1 {
+    font-family: "Chalet-Paris";
+    font-size: 2.5em;
+}
+
+h2 {
+    font-family: "8bit";
 }
 
 h3 {
