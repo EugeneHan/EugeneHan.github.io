@@ -10,127 +10,175 @@
 	<title>Eugene Han's Webpage</title>
 
 	<link href="bootstrap4.5.0/css/bootstrap.min.css" rel="stylesheet">
-	<link href="test.css" rel="stylesheet">
+	<link href="mycss.css" rel="stylesheet">
+	<link href="fontawesome.min.css" rel="stylesheet">
+	
+	<!-- font imports -->
+	<link href="https://fonts.googleapis.com/css2?family=Lusitana&family=Raleway&display=swap" rel="stylesheet">
+	
+	<!-- favicon -->
+	<link rel="icon" href="images/boo.ico" type="image/x-icon"/>
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar">
+
+<body data-spy="scroll" data-target=".navbar">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-		<div class="navbar-brand" href="#page-top">
-			<span>Eugene Han</span>
-		</div>
+		<span class="navbar-brand">
+			Eugene Han
+		</span>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 			
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
-				<li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-				<li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
-				<li class="nav-item"><a class="nav-link" href="#professional">Professional</a></li>
-				<li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
+				<li><hr style="background-color: var(--bg-color);"></li>
+				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#about" class="nav-link">About Me</a></li>
+				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#research" class="nav-link">Research</a></li>
+				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#professional" class="nav-link">Professional</a></li>
+				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a href="#teaching" class="nav-link">Teaching</a></li>
+				<li><hr style="background-color: var(--bg-color);"></li>
+				<li class="nav-item"><a href="bio.html" class="nav-link">Extended Bio</a></li>
 			</ul>
 		</div>
 	</nav>
 
 	<div class="container-fluid mx-auto" style="max-width:800px">	
 			<!-- basic information about me -->
-			<section id="about">
+			<section id="about" class="py-3 py-md-4 py-lg-5">
 				<div class="text-center">
-					<img src="temp.jpg" class="img-fluid img-circle border-0">
+					<img src="images/temp.jpg" class="img-fluid img-circle border-0" style="max-width:200px;">
 					<br>
 					(temporary image)
 					<br>
 					<br>
-					<h2>Eugene Han</h2>
+					<p class="section-header">About Me</p>
 				</div>
 				<div class="pt-3">
 					I am currently a first year Statistics Master's Student at the University of Illinois at Urbana-Champaign. Previously, I was at Carnegie Mellon University where I studied Mathematics, Statistics, and Computer Science. You can find a comprehensive list of my coursework relating to my field of study <a href="files/coursework.pdf">here</a>.
 				</div>
+				<div class="text-center pt-3 pt-lg-5">
+					<ul class="list-inline">
+						<li class="list-inline-item">
+							<span class="fa-stack fa-2x icons">
+								<i class="fas fa-circle fa-stack-2x"></i>
+								<a href="https://github.com/EugeneHan" target="_blank"><i class="fab fa-github fa-stack-1x fa-inverse"></i></a>
+							</span>
+							<br><a href="https://github.com/EugeneHan" target="_blank">Github</a>
+						</li>
+						<li class="list-inline-item">
+							<span class="fa-stack fa-2x icons">
+								<i class="fas fa-circle fa-stack-2x"></i>
+								<a href="https://www.linkedin.com/in/eugene-han" target="_blank"><i class="fab fa-linkedin fa-stack-1x fa-inverse"></i></a>
+							</span>
+							<br><a href="https://www.linkedin.com/in/eugene-han" target="_blank">LinkedIn</a>
+						</li>
+						<li class="list-inline-item">
+							<span class="fa-stack fa-2x icons">
+								<i class="fas fa-circle fa-stack-2x"></i>
+								<a href="files/cv no phone.pdf" target="_blank"><i class="fas fa-file-pdf fa-stack-1x fa-inverse"></i></a>
+							</span>
+							<br><a href="files/cv-no-phone.pdf" target="_blank">CV</a>
+						</li>
+						<li class="list-inline-item">
+							<span class="fa-stack fa-2x icons">
+								<i class="fas fa-circle fa-stack-2x"></i>
+								<a href="files/coursework.pdf" target="_blank"><i class="fas fa-book fa-stack-1x fa-inverse"></i></a>
+							</span>
+							<br><a href="files/coursework.pdf" target="_blank">Coursework</a>
+						</li>
+					</ul>
+				</div>
 			</section>
 			
+			<hr class="section-break">
 			
 			<!-- research information -->
-			<section id="research" class="d-flex flex-column">
-				<div class="pt-3">
-					<h3>Research Experience</h3>
-					
-					<!-- Ruoqing section -->
-					<div class="d-flex flex-column flex-md-row pt-3">
-						<div class="mr-auto">
-							<h5>Advisor: <a href="https://sites.google.com/site/teazrq/">Ruoqing Zhu</a>
-							<br>University of Illinois at Urbana-Champaign, Department of Statistics</h5>
-							I am currently working with Ruoqing Zhu on statistical research on microbiome data. Specifically, I am examining new ways of modeling microbiome data on the hypersphere in hopes of more practical usage and inference.
-						</div>
-						<div class="text-md-right date">
-							<span>Mar 2020 - Present</span>
-							<br><img src="uiuc.png" class="img-fluid border-0 d-sm-none d-md-inline pt-3" style="max-width: 8rem; max-height: 8rem">
-						</div>
+			<section id="research" class="py-3 py-md-4 py-lg-5">
+				<div class="section-header text-center">
+					Research Experience
+				</div>
+				
+				<!-- Ruoqing section -->
+				<div class="d-flex flex-column flex-md-row pt-3 pt-lg-5">
+					<div>
+						<h5>Department of Statistics, <span title="University of Illinois at Urbana-Champaign">UIUC</span>
+						<br><span class="font-italic" style="font-weight: normal;">Advisor: <a href="https://sites.google.com/site/teazrq/">Ruoqing Zhu</a></span></h5>
+						I am currently conducting statistical research on microbiome data with Ruoqing Zhu. Specifically, I am examining new ways of modeling microbiome data on the hypersphere in hopes of more practical usage and inference.
 					</div>
-					
-					<!-- Offner section -->
-					<div class="d-flex flex-column flex-md-row pt-3">
-						<div class="mr-auto">
-							<h5>Advisor: <a href="https://davidoffner.wordpress.com/">David Offner</a>
-							<br>Carnegie Mellon University, Department of Mathematical Sciences</h5>
-							As an undergraduate, I had the privilege of working with David Offner on a project about hypercubes. Specifically, I examined linear polychromatic colorings of hypercube faces and found the maximum coloring for a specific class of problems. Some previous bounds were also improved on via an exhaustive search by a <a href="https://arxiv.org/src/1712.02496v1/anc/code.py">program</a> I wrote.
-						</div>
-						<div class="text-md-right date">
-							<span>Oct 2016 - Dec 2017</span>
-							<br><img src="cmu stacked.png" class="img-fluid border-0 d-sm-none d-md-inline" style="max-width: 8rem; max-height: 8rem">
-						</div>
+					<div class="text-md-right date">
+						Mar 2020 - Present
+						<img src="images/uiuc.png" class="img-fluid border-0 d-none d-md-block ml-auto mt-3" style="max-width: 8rem; max-height: 8rem">
 					</div>
-					
-					<!-- my singular publication haha -->
-					<div class="pt-3">
-						<a href="https://rdcu.be/YMcB">Linear \(d\)-polychromatic \(Q_{d-1}\)-colorings of the Hypercube</a>
-						<br>Eugene Han and David Offner, published in <a href="https://link.springer.com/journal/373"><i>Graphs and Combinatorics</i></a>
+				</div>
+				
+				<!-- Offner section -->
+				<div class="d-flex flex-column flex-md-row pt-3 pt-lg-5">
+					<div class="mr-auto">
+						<h5>Department of Mathematical Sciences, <span title="Carnegie Mellon University">CMU</span>
+						<br><span class="font-italic" style="font-weight: normal;">Advisor: <a href="https://davidoffner.wordpress.com/">David Offner</a></span></h5>
+						As an undergraduate, I had the privilege of working with David Offner on a project about hypercubes. Specifically, I examined linear polychromatic colorings of hypercube faces and found the maximum coloring for a specific class of problems. Some previous bounds were also improved on via an exhaustive search by a <a href="https://arxiv.org/src/1712.02496v1/anc/code.py">program</a> I wrote.
 					</div>
+					<div class="text-md-right date">
+						Oct 2016 - Dec 2017
+						<img src="images/cmu stacked.png" class="img-fluid border-0 d-none d-md-block ml-auto mt-3" style="max-width: 8rem; max-height: 8rem;">
+					</div>
+				</div>
+				
+				<!-- my singular publication haha -->
+				<div class="pt-3" style="font-family: serif;">
+					<h5>Publication</h5>
+					<a href="https://rdcu.be/YMcB">Linear \(d\)-polychromatic \(Q_{d-1}\)-colorings of the Hypercube</a>
+					<br>Eugene Han and David Offner (2018), <a href="https://link.springer.com/journal/373"><i>Graphs and Combinatorics</i></a>, 34:791-801
 				</div>
 			</section>
 				
 			
-			
+			<hr class="section-break">
 			
 			<!-- working experience -->
-			<section id="professional">
-				<div class="pt-3">
-					<h3>Professional Experience</h3>
-					
-					<!-- Locus Analytics -->
-					<div class="d-flex flex-column flex-md-row pt-3">
-						<div class="mr-auto">
-							<b>Data Analyst Intern</b>
-							<br>Locus Analytics
-							<p>During my internship, I worked on two separate projects that made use of the firm's proprietary Functional Information System (FIS). In the first project, I developed classification models using algorithms typical for natural language processing in order to classify job postings to its appropriate FIS code. In the second project, I analyzed geographically proximate communities for patterns in functional distributions. This work was ultimately presented to the entire company and investors.
-						</div>
-						<div class="text-md-right date">
-							Jun 2018 - Aug 2018
-							<br>New York, NY
-							<br><img src="locus.png" class="img-fluid border-0 d-sm-none d-md-inline pt-3" style="max-width: 8rem; max-height: 8rem">
-						</div>
+			<section id="professional" class="py-3 py-md-4 py-lg-5">
+				<div class="section-header text-center">
+					Professional Experience
+				</div>
+				
+				<!-- Locus Analytics -->
+				<div class="d-flex flex-column flex-md-row pt-3 pt-lg-5">
+					<div class="mr-auto">
+						<h5>Data Analyst Intern
+						<br><span class="font-italic" style="font-weight: normal;">Locus Analytics</span></h5>
+						<p>During my internship, I worked on two separate projects that made use of the firm's proprietary Functional Information System (FIS). In the first project, I developed classification models using algorithms typical for natural language processing in order to classify job postings to its appropriate FIS code. In the second project, I analyzed geographically proximate communities for patterns in functional distributions. This work was ultimately presented to the entire company and investors.
 					</div>
-					
-					<!-- Opticlose -->
-					<div class="d-flex flex-column flex-md-row pt-3">
-						<div class="mr-auto">
-							<b>Data Science Intern</b>
-							<br>Opticlose
-							<p>Opticlose is a startup aiming to provide high volume sales teams the tools and technology to more effeciently make sales. I specifically analyzed sales data using a combination of Exel and R. I created models to predict the success of a sales closure at each step of the process. In addition, I created a company specific library of R scripts to better automate the process in the future. I also created and presented a slide deck consisting of my analytical results to investors.
-						</div>
-						<div class="text-md-right date">
-							Sep 2014 - Aug 2015
-							<br>New York, NY
-							<br><img src="opticlose.png" class="img-fluid border-0 d-sm-none d-md-inline pt-3" style="max-width: 8rem; max-height: 8rem">
-						</div>
+					<div class="text-md-right date">
+						Jun 2018 - Aug 2018
+						<br>New York, NY
+						<img src="images/locus.png" class="img-fluid border-0 d-none d-md-block ml-auto mt-3" style="max-width: 8rem; max-height: 8rem">
+					</div>
+				</div>
+				
+				<!-- Opticlose -->
+				<div class="d-flex flex-column flex-md-row pt-3 pt-lg-5">
+					<div class="mr-auto">
+						<h5>Data Science Intern
+						<br><span class="font-italic" style="font-weight: normal;">Opticlose</span></h5>
+						<p>Opticlose is a startup aiming to provide high volume sales teams the tools and technology to more effeciently make sales. I specifically analyzed sales data using a combination of Excel and R. I created models to predict the success of a sales closure at each step of the process. In addition, I created a company specific library of R scripts to better automate the process in the future. I also created and presented a slide deck consisting of my analytical results to investors.
+					</div>
+					<div class="text-md-right date">
+						Sep 2014 - Aug 2015
+						<br>New York, NY
+						<img src="images/opticlose.png" class="img-fluid border-0 d-none d-md-block ml-auto mt-3" style="max-width: 8rem; max-height: 8rem">
 					</div>
 				</div>
 			</section>
 			
+			<hr class="section-break">
 			
 			<!-- teaching experience -->
-			<section id="teaching">
-				<div class="pt-3">
-					<h3>Teaching Experience</h3>
+			<section id="teaching" class="py-3 py-md-4 py-lg-5">
+				<div class="section-header text-center">
+					Teaching Experience
+				</div>
+				<div class="pt-3 pt-lg-5">
 					I have been a teaching assistant for the following courses:<br>
 					
 					<!-- 15-351 -->
@@ -155,10 +203,13 @@
 						</div>
 					</div>
 				</div>
-				* - semester spent as head TA
+				<div class="pt-3">
+					* - semester spent as head TA
+				</div>
 			</section>
 
 	</div>
+	
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
@@ -167,8 +218,12 @@
 	<script id="MathJax-script" async 
 			src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 	</script>
+	
 	<!-- Bootstrap -->
 	<script src="bootstrap4.5.0/js/bootstrap.min.js"></script>
+	
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/5f8eed8148.js" crossorigin="anonymous"></script>
 
 </body>
 

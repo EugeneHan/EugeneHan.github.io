@@ -1,0 +1,146 @@
+:root {
+	--bg-color: #F2F2F2;
+	--nav-color: #010440;
+	--text-color: #010440;
+	--text-bg-color: #A3ACBF;
+	--header-color: #4C5273;
+	
+}
+
+a {
+	text-decoration: underline;
+	color: var(--text-color);
+}
+
+a:hover {
+	color: var(--text-bg-color);
+}
+
+a:focus {
+	color: var(--text-bg-color);
+}
+
+body {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	font-family: 'Lusitana', serif;
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	position: relative;
+	overflow-y: scroll;
+}
+
+h5 {
+	font-size: 14pt;
+	color: var(--text-color);
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+/* .active {
+	font-weight: bold;
+	border-color: var(--bg-color)!important;
+	border: 1px solid;
+} */
+
+.active {
+	background-color: var(--text-bg-color);
+	color: var(--text-color)!important;
+}
+
+section:target {
+	padding-top: 60px!important;
+}
+
+.date {
+	min-width: none;
+	font-size: 12pt;
+	font-family: 'Raleway', sans-serif;
+}
+
+.section-header {
+	font-size: 25pt;
+	font-weight: light;
+	font-family: 'Raleway', sans-serif;
+}
+
+.section-break {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(1, 4, 64, 0) 15%, rgba(1, 4, 64, 0.5) 50%, rgba(1, 4, 64, 0) 85%);
+}
+
+.icons {
+	color: var(--text-color);
+}
+
+.icons:hover {
+	color: var(--text-bg-color);
+}
+
+.icons:focus {
+	color: var(--text-bg-color);
+}
+
+#sideNav {
+	background-color: var(--nav-color)!important;
+}
+
+#sideNav .navbar-brand {
+	color: var(--bg-color);
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+    font-weight: 600;
+    text-transform: none;
+	color: var(--text-bg-color);
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link:hover {
+	background-color: var(--text-bg-color);
+	color: var(--text-color);
+}
+
+@media (min-width:992px) {
+	body {
+		padding-top: 0;
+		padding-left: 17rem;
+	}
+	
+	#sideNav {
+		text-align: center;
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		width: 17rem;
+		height: 100vh;
+	}
+	#sideNav .navbar-brand {
+		display: flex;
+		margin: auto auto 0;
+		padding: .5rem;
+		font-family: 'Raleway', sans-serif;
+	}
+	#sideNav .navbar-collapse {
+		display: flex;
+		align-items: flex-start;
+		flex-grow: 0;
+		width: 100%;
+		margin-bottom: auto;
+	}
+	#sideNav .navbar-collapse .navbar-nav {
+		flex-direction: column;
+		width: 100%	
+	}
+}
+
+@media (min-width:768px) {
+	.date {
+		min-width: 15rem;
+	}	
+}
