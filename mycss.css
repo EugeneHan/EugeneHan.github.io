@@ -20,6 +20,34 @@ a:focus {
 	color: var(--text-bg-color);
 }
 
+.card-header a {
+	text-decoration: underline;
+	color: var(--text-color);
+}
+
+.card-header a:hover {
+	color: var(--text-bg-color);
+	text-decoration: underline;
+}
+
+/* this part needs to be better written at some point */
+#sports-list .active {
+	background-color: var(--bg-color);
+	border-bottom-color: var(--bg-color);
+}
+
+#hobbies-list .active {
+	background-color: var(--bg-color);
+	border-bottom-color: var(--bg-color);
+}
+
+#arts-list .active {
+	background-color: var(--bg-color);
+	border-bottom-color: var(--bg-color);
+}
+
+
+
 body {
 	padding-top: 5rem;
 	padding-bottom: 5rem;
@@ -37,14 +65,21 @@ h5 {
 	font-family: 'Raleway', sans-serif;
 }
 
-
 /* .active {
 	font-weight: bold;
 	border-color: var(--bg-color)!important;
 	border: 1px solid;
 } */
 
-.active {
+.card {
+	background-color: var(--bg-color);
+}
+
+.card-header {
+	background-color: var(--bg-color);
+}
+
+#navbarNav .active {
 	background-color: var(--text-bg-color);
 	color: var(--text-color)!important;
 }
@@ -69,6 +104,10 @@ section:target {
     border: 0;
     height: 2px;
     background-image: linear-gradient(to right, rgba(1, 4, 64, 0) 15%, rgba(1, 4, 64, 0.5) 50%, rgba(1, 4, 64, 0) 85%);
+}
+
+.card-header .active
+	background-color: var(--nav-color);
 }
 
 .icons {
